@@ -1,0 +1,13 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    #client의 역할로 자신의 정보를 자신에게 등록하는 의미없는 현상 방지
+    #외부에 있는 다른 마이크로서비스랑 통신 필요 없음
+    register-with-eureka: false
+    fetch-registry: false
+
+spring:
+  application:
+    name: coinbuying-eureka-server
